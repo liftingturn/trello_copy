@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 import CreateBoardForm from './components/CreateBoardForm';
 
@@ -7,18 +7,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img alt = 'mark' src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png'></img>
       </header>
       <body>
         <CreateBoardForm></CreateBoardForm>
