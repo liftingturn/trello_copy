@@ -1,8 +1,24 @@
 .App {
   text-align: center;
+  height: 100%;
+  background-color: yellow;
 }
-
 .App-link {
   color: #61dafb;
 }
-
+.App-header {
+  height: 100px;
+  background-color: green;
+}
+body {
+  background-color: gray;
+  height: 100%;
+}
+.appBody {
+  height: 500px;
+  background-color: teal;
+}
+footer {
+  flex: auto;
+  background-color: thistle;
+}
