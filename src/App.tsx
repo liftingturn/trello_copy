@@ -13,7 +13,9 @@ const App: React.FC = () => {
         ></img>
       </header>
       <div className="appBody">
-        <CreateBoardForm></CreateBoardForm>
+        <CreateBoardForm />
+        <CreateBoardForm />
+        <CreateBoardForm />
       </div>
       <footer>this is footer</footer>
     </div>

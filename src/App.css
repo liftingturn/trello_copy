@@ -1,3 +1,12 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
 .App {
   text-align: center;
   height: 100%;
@@ -7,18 +16,16 @@
   color: #61dafb;
 }
 .App-header {
-  height: 100px;
+  height: 20%;
   background-color: green;
 }
-body {
-  background-color: gray;
-  height: 100%;
-}
+
 .appBody {
-  height: 500px;
+  height: 70%;
   background-color: teal;
+  display: flex;
 }
 footer {
-  flex: auto;
+  height: 10%;
   background-color: thistle;
 }
