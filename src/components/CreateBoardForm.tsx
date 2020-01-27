@@ -24,7 +24,9 @@ export default class CreateBoardForm extends Component<props, MyState> {
           </div>
         ) : (
           <div>
-            <button onClick={this.activateCreateProject}>프로젝트 생성</button>
+            <button onClick={this.activateCreateProject}>
+              create new board
+            </button>
           </div>
         )}
       </div>
