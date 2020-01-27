@@ -1,8 +1,31 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
 .App {
   text-align: center;
+  height: 100%;
+  background-color: yellow;
 }
-
 .App-link {
   color: #61dafb;
 }
+.App-header {
+  height: 20%;
+  background-color: green;
+}
 
+.appBody {
+  height: 70%;
+  background-color: teal;
+  display: flex;
+}
+footer {
+  height: 10%;
+  background-color: thistle;
+}
