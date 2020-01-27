@@ -1,7 +1,9 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import './App.css';
 import CreateBoardForm from './components/CreateBoardForm';
+import CreateListForm from './components/CreateListForm';
 
 const App: React.FC = () => {
   return (
@@ -12,11 +14,14 @@ const App: React.FC = () => {
           src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
         ></img>
       </header>
-      <div className="appBody">
-        <CreateBoardForm />
-        <CreateBoardForm />
-        <CreateBoardForm />
-      </div>
+      <Router>
+        <div className="appBody">
+          <Switch>
+            <Route exact path="/" component={CreateBoardForm} />
+            <Route exact path="/board/:name" component={CreateListForm} />
+          </Switch>
+        </div>
+      </Router>
       <footer>this is footer</footer>
     </div>
   );
