@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import './App.css';
-import CreateBoardForm from './components/CreateBoardForm';
-import CreateListForm from './components/CreateListForm';
+import BoardContainer from './components/BoardContainer';
+import BoardInnerView from './components/BoardInnerView';
 
 const App: React.FC = () => {
   return (
@@ -17,8 +17,8 @@ const App: React.FC = () => {
       <Router>
         <div className="appBody">
           <Switch>
-            <Route exact path="/" component={CreateBoardForm} />
-            <Route exact path="/board/:name" component={CreateListForm} />
+            <Route exact path="/" component={BoardContainer} />
+            <Route exact path="/board/:name" component={BoardInnerView} />
           </Switch>
         </div>
       </Router>
